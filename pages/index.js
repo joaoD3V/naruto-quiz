@@ -5,7 +5,8 @@ import Footer from '../src/components/Footer';
 import GithubCorner from '../src/components/GithubCorner';
 import QuizBackground from '../src/components/QuizBackground';
 import QuizLogo from '../src/components/QuizLogo';
-
+import Meta from '../src/components/Meta';
+import React from 'react';
 
 
 //  const BackgroundImage = styled.div`
@@ -30,26 +31,29 @@ export const QuizContainer = styled.div`
 
 export default function Home() {
   return (
-    <QuizBackground backgroundImage={db.bg}>
-      <QuizContainer>
-        <Widget>
-          <Widget.Header>
-            <h1>Uzumaki Naruto</h1>
-          </Widget.Header>
-          <Widget.Content>            
-            <p>Lorem ipsum dolor sit amet...</p>
-          </Widget.Content>
-        </Widget>
-        <Widget>
-          <Widget.Content>
-            <h1>Quiz da Galera</h1>
+    <>
+      <Meta />
+      <QuizBackground backgroundImage={db.bg}>
+        <QuizContainer>
+          <Widget>
+            <Widget.Header>
+              <h1>Uzumaki Naruto</h1>
+            </Widget.Header>
+            <Widget.Content>            
+              <p>Lorem ipsum dolor sit amet...</p>
+            </Widget.Content>
+          </Widget>
+          <Widget>
+            <Widget.Content>
+              <h1>Quiz da Galera</h1>
 
-            <p>Lorem ipsum dolor sit amet...</p>  
-          </Widget.Content>
-        </Widget>
-        <Footer />
-      </QuizContainer>
-      <GithubCorner projectUrl="https://github.com/joaoD3V"/>
-    </QuizBackground>
+              <p>Lorem ipsum dolor sit amet...</p>  
+            </Widget.Content>
+          </Widget>
+          <Footer />
+        </QuizContainer>
+        <GithubCorner projectUrl="https://github.com/joaoD3V"/>
+      </QuizBackground>
+    </>
   );
 }
