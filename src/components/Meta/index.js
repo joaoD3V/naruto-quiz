@@ -5,7 +5,8 @@ export default function Meta(){
   return (
     <div>
       <Head>
-        <title>{db.title}</title>  
+        <title>{db.title}</title>
+        <html lang="pt-br" prefix="og: http://ogp.me/ns#" /> 
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="title" content={db.title}/>
         <meta name="description" content={db.description} />
