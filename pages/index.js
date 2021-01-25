@@ -6,7 +6,6 @@ import GithubCorner from '../src/components/GithubCorner';
 import QuizBackground from '../src/components/QuizBackground';
 import QuizLogo from '../src/components/QuizLogo';
 import Meta from '../src/components/Meta';
-import React from 'react';
 
 
 //  const BackgroundImage = styled.div`
