@@ -5,7 +5,7 @@ export default function Meta(){
   return (
     <div>
       <Head>
-        <title>Uzumaki Naruto</title>  
+        <title>{db.title}</title>  
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="title" content={db.title}/>
         <meta name="description" content={db.description} />

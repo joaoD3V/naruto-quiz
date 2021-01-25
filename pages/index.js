@@ -34,12 +34,13 @@ export default function Home() {
       <Meta />
       <QuizBackground backgroundImage={db.bg}>
         <QuizContainer>
+          <QuizLogo />
           <Widget>
             <Widget.Header>
               <h1>Uzumaki Naruto</h1>
             </Widget.Header>
             <Widget.Content>            
-              <p>Lorem ipsum dolor sit amet...</p>
+              <p>Teste os seus conhecimentos sobre naruto e divirta-se criando o seu AluraQuiz!</p>
             </Widget.Content>
           </Widget>
           <Widget>
